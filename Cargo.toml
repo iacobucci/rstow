@@ -1,6 +1,20 @@
 [package]
 name = "rstow"
 version = "0.1.0"
+edition = "2021"
+authors = ["Valerio Iacobucci <tuo@email>"]
+description = "Rstow stow"
+license = "MIT"
+repository = "https://github.com/iacobucci/rstow"
+homepage = "https://github.com/iacobucci/rstow"
+readme = "README.md"
+keywords = ["dotfiles", "symlink", "cli", "tool"]
+categories = ["command-line-utilities"]
+documentation = "https://docs.rs/rstow"
 
 [dependencies]
 regex = "1.11.1"
+
+[[bin]]
+name = "rstow"
+path = "src/main.rs"
